@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SheCodes </title>
     <style>
+       
         body{
         background-color: #f6f2fe;
+        margin: 0 ;
         }
         h1{
             color: #885df1;
@@ -24,6 +26,7 @@
         img {
             display: block;
             margin: 0 auto;
+            
 
         }
         h3{
@@ -59,6 +62,11 @@
         a:hover{
           text-decoration: underline;
         }
+        @media (max-width:750px){
+          img{
+            width: 23rem;
+          }
+        }
         .contact{
           color: #885df1;
         }
@@ -74,6 +82,7 @@
         .stories{
             color: green
         }
+    
     </style>
   </head>
   <body>
@@ -117,9 +126,9 @@
 
         let h1 = document.querySelector("h1");
        if (age >= 18) {
-            h1.innerHTML = "<em> Hi, </em>" + name + "! Welcome to SheCodes!"
+            h1.innerHTML = "Hi, " + name + "! Welcome to SheCodes!"
         } else {
-          h1.innerHTML = "<em> Sorry, </em>" + name + "! You cannot join SheCodes" 
+          h1.innerHTML = "Sorry," + name + "! You cannot join SheCodes" 
         }
       }
       let applyButton = document.querySelector("button");
